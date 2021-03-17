@@ -1,5 +1,3 @@
--- | LESSON 16
-
 data AuthorName = AuthorName
     { firstName :: String
     , lastName  :: String
