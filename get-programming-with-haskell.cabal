@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ad20945799149e51669f40899495c7fb61f63ede37e9a7aa8778873be1b548d2
+-- hash: 005fcd79e2191ea31626f9498c5fdc8314000e8668d485455d3f804fa2ad7910
 
 name:           get-programming-with-haskell
 version:        0.1.0.0
@@ -32,6 +32,7 @@ library
       base >=4.7 && <5
     , containers
     , random
+    , split
   default-language: Haskell2010
 
 executable get-programming-with-haskell-exe
@@ -46,6 +47,7 @@ executable get-programming-with-haskell-exe
     , containers
     , get-programming-with-haskell
     , random
+    , split
   default-language: Haskell2010
 
 test-suite get-programming-with-haskell-test
@@ -61,4 +63,5 @@ test-suite get-programming-with-haskell-test
     , containers
     , get-programming-with-haskell
     , random
+    , split
   default-language: Haskell2010
