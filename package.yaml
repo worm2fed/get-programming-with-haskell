@@ -23,6 +23,7 @@ dependencies:
   - containers
   - random
   - split
+  - text
 
 library:
   source-dirs: src
