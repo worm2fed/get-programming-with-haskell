@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 384a80b5225e97b57b2605a545c449803d7556f5fb2b92ccb5041f3ed0591026
+-- hash: 911b39a83162572964fafe9c8ff91fc07c73c587e52a7bc27c2139d08b870c0d
 
 name:           get-programming-with-haskell
 version:        0.1.0.0
@@ -30,6 +30,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
     , random
     , split
@@ -45,6 +46,7 @@ executable get-programming-with-haskell-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
     , get-programming-with-haskell
     , random
@@ -62,6 +64,7 @@ test-suite get-programming-with-haskell-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring
     , containers
     , get-programming-with-haskell
     , random
