@@ -1,4 +1,4 @@
-module Unit6.Lesson34.Palindrome
+module Palindrome
     ( isPalindrome
     , preProcess
     ) where

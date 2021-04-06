@@ -1,9 +1,9 @@
-module Unit4.Lesson25.Main where
+module Main where
 
 import           Control.Monad         (foldM)
 import qualified Data.ByteString.Char8 as BC
 import           System.Environment    (getArgs)
-import           Unit4.Lesson25.Glitch (glitchActions)
+import           Glitch (glitchActions)
 
 
 main :: IO ()

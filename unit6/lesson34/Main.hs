@@ -1,7 +1,7 @@
-module Unit6.Lesson34.Main where
+module Main where
 
-import qualified Data.Text.IO              as TIO
-import           Unit6.Lesson34.Palindrome (isPalindrome)
+import qualified Data.Text.IO as TIO
+import           Palindrome   (isPalindrome)
 
 
 main :: IO ()

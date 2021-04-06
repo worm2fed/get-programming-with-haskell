@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Unit4.Lesson25.Glitch
+module Glitch
     ( glitchActions
     , randomReplaceByte
     , randomSortSection
