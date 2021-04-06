@@ -1,4 +1,6 @@
 import qualified Data.Map as Map
+
+
 areaGivenDiameter :: Double -> Double
 areaGivenDiameter size = pi * (size / 2) ^ 2
 
