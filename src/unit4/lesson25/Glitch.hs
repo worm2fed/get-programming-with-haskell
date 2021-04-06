@@ -1,21 +1,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import           Control.Monad
-import qualified Data.ByteString       as B
+module Unit4.Lesson25.Glitch
+    ( glitchActions
+    , randomReplaceByte
+    , randomSortSection
+    , randomReverseBytes
+    ) where
+
 import qualified Data.ByteString.Char8 as BC
-import           System.Environment
-import           System.Random
+import           System.Random         (Random (randomRIO))
 
-
-main :: IO ()
-main = do
-    args <- getArgs
-    let fileName = head args
-    imageFile <- BC.readFile fileName
-    glitched <- foldM (\bytes f -> f bytes) imageFile glitchActions
-    let glitchedFileName = mconcat ["glitched_", fileName]
-    BC.writeFile glitchedFileName glitched
-    print "all done"
 
 intToChar :: Int -> Char
 intToChar int = toEnum safeInt
