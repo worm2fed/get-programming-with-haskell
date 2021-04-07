@@ -1,0 +1,70 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2ac2bf921cb2c8fc4ed4e5499822212ce9e8a93221951a52a1660db01acbebc7
+
+name:           palindrome-testing
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/worm2fed/palindrome-testing#readme>
+homepage:       https://github.com/worm2fed/palindrome-testing#readme
+bug-reports:    https://github.com/worm2fed/palindrome-testing/issues
+author:         Andrey Demidenko
+maintainer:     worm2fed@gmail.com
+copyright:      worm2fed
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/worm2fed/palindrome-testing
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_palindrome_testing
+  hs-source-dirs:
+      src
+  default-extensions: OverloadedStrings
+  build-depends:
+      base >=4.7 && <5
+    , text
+  default-language: Haskell2010
+
+executable palindrome-testing-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_palindrome_testing
+  hs-source-dirs:
+      app
+  default-extensions: OverloadedStrings
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , palindrome-testing
+    , text
+  default-language: Haskell2010
+
+test-suite palindrome-testing-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_palindrome_testing
+  hs-source-dirs:
+      test
+  default-extensions: OverloadedStrings
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , base >=4.7 && <5
+    , palindrome-testing
+    , quickcheck-instances
+    , text
+  default-language: Haskell2010
