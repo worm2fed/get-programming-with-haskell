@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "db-lesson:lib"
+
+    - path: "./app/Main.hs"
+      component: "db-lesson:exe:db-lesson-exe"
+
+    - path: "./app/Paths_db_lesson.hs"
+      component: "db-lesson:exe:db-lesson-exe"
+
+    - path: "./test"
+      component: "db-lesson:test:db-lesson-test"
